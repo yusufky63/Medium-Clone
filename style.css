@@ -1,0 +1,11 @@
+.bg-yellow {
+    background-color: #ffc017;
+}
+
+.border-bottom-dark {
+    border-bottom: 1px solid black
+}
+
+.display-4 {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}

@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Medium</title>
+</head>
+
+<body>
+    <!-- NAVBAR  START -->
+
+    <div class=" bg-yellow border-bottom-dark fixed-top ">
+        <div class="container ">
+            <nav class="navbar ">
+                <img class="medium-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzOTQwIDYxMCIgY2xhc3M9ImJuIGJvIj48cGF0aCBkPSJNNTk0Ljc5IDMwOC4yYzAgMTYzLjc2LTEzMS44NSAyOTYuNTItMjk0LjUgMjk2LjUyUzUuOCA0NzIgNS44IDMwOC4yIDEzNy42NSAxMS42OSAzMDAuMjkgMTEuNjlzMjk0LjUgMTMyLjc1IDI5NC41IDI5Ni41MU05MTcuODYgMzA4LjJjMCAxNTQuMTYtNjUuOTMgMjc5LjEyLTE0Ny4yNSAyNzkuMTJzLTE0Ny4yNS0xMjUtMTQ3LjI1LTI3OS4xMlM2ODkuMjkgMjkuMDggNzcwLjYxIDI5LjA4czE0Ny4yNSAxMjUgMTQ3LjI1IDI3OS4xMk0xMDUwIDMwOC4yYzAgMTM4LjEyLTIzLjE5IDI1MC4wOC01MS43OSAyNTAuMDhzLTUxLjc5LTExMi01MS43OS0yNTAuMDggMjMuMTktMjUwLjA4IDUxLjgtMjUwLjA4UzEwNTAgMTcwLjA5IDEwNTAgMzA4LjJNMTg2Mi43NyAzNy40bC44Mi0uMTh2LTYuMzVoLTE2Ny40OGwtMTU1LjUxIDM2NS41LTE1NS41MS0zNjUuNWgtMTgwLjQ4djYuMzVsLjgxLjE4YzMwLjU3IDYuOSA0Ni4wOSAxNy4xOSA0Ni4wOSA1NC4zdjQzNC40NWMwIDM3LjExLTE1LjU4IDQ3LjQtNDYuMTUgNTQuM2wtLjgxLjE4VjU4N0gxMzI3di02LjM1bC0uODEtLjE4Yy0zMC41Ny02LjktNDYuMDktMTcuMTktNDYuMDktNTQuM1YxMTYuOUwxNDc5Ljg3IDU4N2gxMS4zM2wyMDUuNTktNDgzLjIxVjUzNi45Yy0yLjYyIDI5LjMxLTE4IDM4LjM2LTQ1LjY4IDQ0LjYxbC0uODIuMTl2Ni4zaDIxMy4zdi02LjNsLS44Mi0uMTljLTI3LjcxLTYuMjUtNDMuNDYtMTUuMy00Ni4wOC00NC42MWwtLjE0LTQ0NS4yaC4xNGMwLTM3LjExIDE1LjUyLTQ3LjQgNDYuMDgtNTQuM205Ny40MyAyODcuOGMzLjQ5LTc4LjA2IDMxLjUyLTEzNC40IDc4LjU2LTEzNS4zNyAxNC41MS4yNCAyNi42OCA1IDM2LjE0IDE0LjE2IDIwLjEgMTkuNTEgMjkuNTUgNjAuMjggMjguMDkgMTIxLjIxem0tMi4xMSAyMmgyNTB2LTEuMDVjLS43MS01OS42OS0xOC0xMDYuMTItNTEuMzQtMTM4LTI4LjgyLTI3LjU1LTcxLjQ5LTQyLjcxLTExNi4zMS00Mi43MWgtMWMtMjMuMjYgMC01MS43OSA1LjY0LTcyLjA5IDE1Ljg2LTIzLjExIDEwLjctNDMuNDkgMjYuNy02MC40NSA0Ny43LTI3LjMgMzMuODMtNDMuODQgNzkuNTUtNDcuODYgMTMwLjkzLS4xMyAxLjU0LS4yNCAzLjA4LS4zNSA0LjYycy0uMTggMi45Mi0uMjUgNC4zOWEzMzIuNjQgMzMyLjY0IDAgMCAwLS4zNiAyMS42OUMxODYwLjc5IDUwNyAxOTIzLjY1IDYwMCAyMDM1LjMgNjAwYzk4IDAgMTU1LjA3LTcxLjY0IDE2OS4zLTE2Ny44bC03LjE5LTIuNTNjLTI1IDUxLjY4LTY5LjkgODMtMTIxIDc5LjE4LTY5Ljc2LTUuMjItMTIzLjItNzUuOTUtMTE4LjM1LTE2MS42M201MzIuNjkgMTU3LjY4Yy04LjIgMTkuNDUtMjUuMzEgMzAuMTUtNDguMjQgMzAuMTVzLTQzLjg5LTE1Ljc0LTU4Ljc4LTQ0LjM0Yy0xNi0zMC43LTI0LjQyLTc0LjEtMjQuNDItMTI1LjUxIDAtMTA3IDMzLjI4LTE3Ni4yMSA4NC43OS0xNzYuMjEgMjEuNTcgMCAzOC41NSAxMC43IDQ2LjY1IDI5LjM3em0xNjUuODQgNzYuMjhjLTMwLjU3LTcuMjMtNDYuMDktMTgtNDYuMDktNTdWNS4yOEwyNDI0Ljc3IDYwdjYuN2wxLjE0LS4wOWMyNS42Mi0yLjA3IDQzIDEuNDcgNTMuMDkgMTAuNzkgNy45IDcuMyAxMS43NSAxOC41IDExLjc1IDM0LjI2djcxLjE0Yy0xOC4zMS0xMS42OS00MC4wOS0xNy4zOC02Ni41Mi0xNy4zOC01My42IDAtMTAyLjU5IDIyLjU3LTEzNy45MiA2My41Ni0zNi44MyA0Mi43Mi01Ni4zIDEwMS4xLTU2LjMgMTY4LjgxQzIyMzAgNTE4LjcyIDIyODkuNTMgNjAwIDIzNzguMTMgNjAwYzUxLjgzIDAgOTMuNTMtMjguNCAxMTIuNjItNzYuM1Y1ODhoMTY2LjY1di02LjY2em0xNTkuMjktNTA1LjMzYzAtMzcuNzYtMjguNDctNjYuMjQtNjYuMjQtNjYuMjQtMzcuNTkgMC02NyAyOS4xLTY3IDY2LjI0czI5LjQ0IDY2LjI0IDY3IDY2LjI0YzM3Ljc3IDAgNjYuMjQtMjguNDggNjYuMjQtNjYuMjRtNDMuODQgNTA1LjMzYy0zMC41Ny03LjIzLTQ2LjA5LTE4LTQ2LjA5LTU3aC0uMTNWMTY2LjY1bC0xNjYuNjYgNDcuODV2Ni41bDEgLjA5YzM2LjA2IDMuMjEgNDUuOTMgMTUuNjMgNDUuOTMgNTcuNzdWNTg4aDE2Ni44di02LjY2em00MjcuMDUgMGMtMzAuNTctNy4yMy00Ni4wOS0xOC00Ni4wOS01N1YxNjYuNjVMMzA4MiAyMTIuOTJ2Ni41MmwuOTQuMWMyOS40OCAzLjEgMzggMTYuMjMgMzggNTguNTZ2MjI2Yy05LjgzIDE5LjQ1LTI4LjI3IDMxLTUwLjYxIDMxLjc4LTM2LjIzIDAtNTYuMTgtMjQuNDctNTYuMTgtNjguOVYxNjYuNjZsLTE2Ni42NiA0Ny44NVYyMjFsMSAuMDljMzYuMDYgMy4yIDQ1Ljk0IDE1LjYyIDQ1Ljk0IDU3Ljc3djE5MS4yN2EyMTQuNDggMjE0LjQ4IDAgMCAwIDMuNDcgMzkuODJsMyAxMy4wNWMxNC4xMSA1MC41NiA1MS4wOCA3NyAxMDkgNzcgNDkuMDYgMCA5Mi4wNi0zMC4zNyAxMTEtNzcuODl2NjZoMTY2LjY2di02LjY2ek0zOTM0LjIgNTg4di02LjY3bC0uODEtLjE5Yy0zMy4xNy03LjY1LTQ2LjA5LTIyLjA3LTQ2LjA5LTUxLjQzdi0yNDMuMmMwLTc1LjgzLTQyLjU5LTEyMS4wOS0xMTMuOTMtMTIxLjA5LTUyIDAtOTUuODUgMzAuMDUtMTEyLjczIDc2Ljg2LTEzLjQxLTQ5LjYtNTItNzYuODYtMTA5LjA2LTc2Ljg2LTUwLjEyIDAtODkuNCAyNi40NS0xMDYuMjUgNzEuMTN2LTY5Ljg3bC0xNjYuNjYgNDUuODl2Ni41NGwxIC4wOWMzNS42MyAzLjE2IDQ1LjkzIDE1Ljk0IDQ1LjkzIDU3VjU4OGgxNTUuNXYtNi42NmwtLjgyLS4yYy0yNi40Ni02LjIyLTM1LTE3LjU2LTM1LTQ2LjY2VjI1NS43MmM3LTE2LjM1IDIxLjExLTM1LjcyIDQ5LTM1LjcyIDM0LjY0IDAgNTIuMiAyNCA1Mi4yIDcxLjI4VjU4OGgxNTUuNTR2LTYuNjZsLS44Mi0uMmMtMjYuNDYtNi4yMi0zNS0xNy41Ni0zNS00Ni42NnYtMjQ4YTE2MC40NSAxNjAuNDUgMCAwIDAtMi4yLTI3LjY4YzcuNDItMTcuNzcgMjIuMzQtMzguOCA1MS4zNy0zOC44IDM1LjEzIDAgNTIuMiAyMy4zMSA1Mi4yIDcxLjI4VjU4OHoiLz48L3N2Zz4="
+                    alt="" srcset=" " width="150" height="50">
+                <div class="">
+                    <span class="d-flex justify-content-end text-black ">
+                        <a class="nav-link nav-link active ms-3 text-black" href="#">Ourstory</a>
+                        <a class="nav-item nav-link active ms-3 text-black" href="#">Membership</a>
+                        <a class="nav-item nav-link active ms-3 text-black" href="#">Write</a>
+                        <a class="nav-item nav-link active ms-3 text-black" href="#">Sign In</a>
+                        <a class="nav-item nav-link active ms-3 btn btn-dark text-light rounded-pill" href="#">Get
+                            Started</a>
+                </div>
+        </div>
+        </nav>
+    </div>
+     <!-- NAVBAR  END -->
+
+    <!--  MAIN START -->
+    <div  class="bg-yellow pt-5 mt-5 border-bottom-dark ">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h1 class="display-4"> <strong> Medium is a place <br> to write, read, and <br>
+                                    connect</strong></h1>
+                        </li>
+                        <li>
+                            <p>It's easy and free to post your thinking on any topic and connect <br> with millions of
+                                readers.
+                            </p>
+                        </li>
+                        <li>
+                            <button class="bg-white btn btn-outline-black rounded-pill border mb-2">Start Writing</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6"><img class="bckg-img float-end"
+                        src="https://miro.medium.com/max/350/4*BIK9VGjeCj2TaTDw4id2nA.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <!--  MAIN END -->
+
+     <!--  SECTION-1 START -->
+  
+    <div class="border-bottom  py-3 my-3">
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 mt-2">
+                    <ul class="list-unstyled d-flex ">
+                        <li> <img
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSIyOSIgdmlld0JveD0iMCAwIDI4IDI5IiBmaWxsPSJub25lIiBjbGFzcz0iaXAgeSI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgLjhoMjh2MjhIMHoiLz48ZyBvcGFjaXR5PSIwLjgiIGNsaXAtcGF0aD0idXJsKCN0cmVuZGluZ19zdmdfX2NsaXAwKSI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQgNC44aDIwdjIwSDR6Ii8+PGNpcmNsZSBjeD0iMTQiIGN5PSIxNC43OSIgcj0iOS41IiBzdHJva2U9IiMwMDAiLz48cGF0aCBkPSJNNS40NiAxOC4zNmw0LjQ3LTQuNDhNOS45NyAxMy44N2wzLjY3IDMuNjZNMTMuNjcgMTcuNTNsNS4xLTUuMDlNMTYuNjIgMTEuNmgzTTE5LjYyIDExLjZ2MyIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L2c+PGRlZnM+PGNsaXBQYXRoIGlkPSJ0cmVuZGluZ19zdmdfX2NsaXAwIj48cGF0aCBmaWxsPSIjZmZmIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0IDQuOCkiIGQ9Ik0wIDBoMjB2MjBIMHoiLz48L2NsaXBQYXRoPjwvZGVmcz48L3N2Zz4="
+                                alt="" srcset="" width="30" height="30"></li>
+                        <li>
+                            <p class="small py-1 px-1 "><strong>TRENDING ON MEDIUM</strong> </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 ">
+                    <div class="row">
+                        <div class="col-1 mx-2">
+                            <h3 class="text-black-50 "><strong>01</strong> </h3>
+                        </div>
+                        <div class="col-9">
+                            <img class="rounded-circle"
+                                src="https://miro.medium.com/fit/c/24/24/1*bJaQVXydvTUKte67XWoeRQ.jpeg" alt="">
+                            <span class="small mx-1">Sienna Mae Gomez</span>
+                    <h6 class="mt-2"> <strong>Sienna Mae Gomez: Reflections from an 18-Year Old Me</strong>
+                    </h6>
+                    <ul class="list-inline small">
+                        <li class="list-inline-item text-black-50">jan 23</li>
+                        <li class="list-inline-item text-black-50">·</li>
+                        <li class="list-inline-item text-black-50">15 min read</li>
+                        <li class="list-inline-item "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJzdGFyLTE1cHhfc3ZnX19zdmdJY29uLXVzZSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiB2aWV3Qm94PSIwIDAgMTUgMTUiIGFyaWEtbGFiZWw9Ik1lbWJlciBvbmx5IGNvbnRlbnQiPjxwYXRoIGQ9Ik03LjQ0IDIuMzJjLjAzLS4xLjA5LS4xLjEyIDBsMS4yIDMuNTNhLjI5LjI5IDAgMCAwIC4yNi4yaDMuODhjLjExIDAgLjEzLjA0LjA0LjFMOS44IDguMzNhLjI3LjI3IDAgMCAwLS4xLjI5bDEuMiAzLjUzYy4wMy4xLS4wMS4xMy0uMS4wN2wtMy4xNC0yLjE4YS4zLjMgMCAwIDAtLjMyIDBMNC4yIDEyLjIyYy0uMS4wNi0uMTQuMDMtLjEtLjA3bDEuMi0zLjUzYS4yNy4yNyAwIDAgMC0uMS0uM0wyLjA2IDYuMTZjLS4xLS4wNi0uMDctLjEyLjAzLS4xMmgzLjg5YS4yOS4yOSAwIDAgMCAuMjYtLjE5bDEuMi0zLjUyeiIvPjwvc3ZnPg=="
+                                alt=""></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 ">
+        <div class="row">
+            <div class="col-1 mx-2">
+                <h3 class="text-black-50 "><strong>02</strong> </h3>
+            </div>
+            <div class="col-9">
+                <img class="rounded-circle" src="https://miro.medium.com/fit/c/24/24/1*ggP9lxa-CRt3ul2GxMYGCw.jpeg" alt="">
+                <span class="small mx-1">Tim Sneath in Flutter</span>
+                <h6 class="mt-2"> <strong>Announcing Flutter for Windows</strong> </h6>
+                <ul class="list-inline small">
+                    <li class="list-inline-item text-black-50">Feb 3</li>
+                    <li class="list-inline-item text-black-50">·</li>
+                    <li class="list-inline-item text-black-50">7 min read</li>
+                    <li class="list-inline-item "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJzdGFyLTE1cHhfc3ZnX19zdmdJY29uLXVzZSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiB2aWV3Qm94PSIwIDAgMTUgMTUiIGFyaWEtbGFiZWw9Ik1lbWJlciBvbmx5IGNvbnRlbnQiPjxwYXRoIGQ9Ik03LjQ0IDIuMzJjLjAzLS4xLjA5LS4xLjEyIDBsMS4yIDMuNTNhLjI5LjI5IDAgMCAwIC4yNi4yaDMuODhjLjExIDAgLjEzLjA0LjA0LjFMOS44IDguMzNhLjI3LjI3IDAgMCAwLS4xLjI5bDEuMiAzLjUzYy4wMy4xLS4wMS4xMy0uMS4wN2wtMy4xNC0yLjE4YS4zLjMgMCAwIDAtLjMyIDBMNC4yIDEyLjIyYy0uMS4wNi0uMTQuMDMtLjEtLjA3bDEuMi0zLjUzYS4yNy4yNyAwIDAgMC0uMS0uM0wyLjA2IDYuMTZjLS4xLS4wNi0uMDctLjEyLjAzLS4xMmgzLjg5YS4yOS4yOSAwIDAgMCAuMjYtLjE5bDEuMi0zLjUyeiIvPjwvc3ZnPg=="
+                            alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 ">
+        <div class="row">
+            <div class="col-1 mx-2">
+                <h3 class="text-black-50 "><strong>03</strong> </h3>
+            </div>
+            <div class="col-9">
+                <img class="rounded-circle" src=https://miro.medium.com/fit/c/24/24/1*tPfbBeQ23qMKUptWlw1FaQ.jpeg " alt=" ">
+                            <span class=" small mx-1 ">Alex Hanna</span>
+                            <h6 class=" mt-2 "> <strong>On Racialized Tech Organizations and Complaint: A Goodbye to Google</strong> </h6>
+                            <ul class=" list-inline small ">
+                                <li class=" list-inline-item text-black-50 ">Feb 2</li>
+                                <li class=" list-inline-item text-black-50 ">·</li>
+                                <li class=" list-inline-item text-black-50 ">3 min read</li>
+                                <li class=" list-inline-item "><img src=" data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJzdGFyLTE1cHhfc3ZnX19zdmdJY29uLXVzZSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiB2aWV3Qm94PSIwIDAgMTUgMTUiIGFyaWEtbGFiZWw9Ik1lbWJlciBvbmx5IGNvbnRlbnQiPjxwYXRoIGQ9Ik03LjQ0IDIuMzJjLjAzLS4xLjA5LS4xLjEyIDBsMS4yIDMuNTNhLjI5LjI5IDAgMCAwIC4yNi4yaDMuODhjLjExIDAgLjEzLjA0LjA0LjFMOS44IDguMzNhLjI3LjI3IDAgMCAwLS4xLjI5bDEuMiAzLjUzYy4wMy4xLS4wMS4xMy0uMS4wN2wtMy4xNC0yLjE4YS4zLjMgMCAwIDAtLjMyIDBMNC4yIDEyLjIyYy0uMS4wNi0uMTQuMDMtLjEtLjA3bDEuMi0zLjUzYS4yNy4yNyAwIDAgMC0uMS0uM0wyLjA2IDYuMTZjLS4xLS4wNi0uMDctLjEyLjAzLS4xMmgzLjg5YS4yOS4yOSAwIDAgMCAuMjYtLjE5bDEuMi0zLjUyeiIvPjwvc3ZnPg=="
+                                        alt=" "></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-sm-4 ">
+                    <div class=" row ">
+                        <div class=" col-1 mx-2 ">
+                            <h3 class=" text-black-50 "><strong>04</strong> </h3>
+                        </div>
+                        <div class=" col-9 ">
+                            <img class=" rounded-circle " src=" https://miro.medium.com/fit/c/24/24/1*2P_T8NzI8W3q_M95y9L2vA.jpeg " alt=" ">
+                            <span class=" small mx-1 ">Alex Chesser in Index</span>
+                            <h6 class=" mt-2 "> <strong>Career Advice Nobody Gave Me: Never Ignore a Recruiter</strong> </h6>
+                            <ul class=" list-inline small ">
+                                <li class=" list-inline-item text-black-50 ">Feb 1</li>
+                                <li class=" list-inline-item text-black-50 ">·</li>
+                                <li class=" list-inline-item text-black-50 ">3 min read</li>
+                                <li class=" list-inline-item "><img src=" data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJzdGFyLTE1cHhfc3ZnX19zdmdJY29uLXVzZSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiB2aWV3Qm94PSIwIDAgMTUgMTUiIGFyaWEtbGFiZWw9Ik1lbWJlciBvbmx5IGNvbnRlbnQiPjxwYXRoIGQ9Ik03LjQ0IDIuMzJjLjAzLS4xLjA5LS4xLjEyIDBsMS4yIDMuNTNhLjI5LjI5IDAgMCAwIC4yNi4yaDMuODhjLjExIDAgLjEzLjA0LjA0LjFMOS44IDguMzNhLjI3LjI3IDAgMCAwLS4xLjI5bDEuMiAzLjUzYy4wMy4xLS4wMS4xMy0uMS4wN2wtMy4xNC0yLjE4YS4zLjMgMCAwIDAtLjMyIDBMNC4yIDEyLjIyYy0uMS4wNi0uMTQuMDMtLjEtLjA3bDEuMi0zLjUzYS4yNy4yNyAwIDAgMC0uMS0uM0wyLjA2IDYuMTZjLS4xLS4wNi0uMDctLjEyLjAzLS4xMmgzLjg5YS4yOS4yOSAwIDAgMCAuMjYtLjE5bDEuMi0zLjUyeiIvPjwvc3ZnPg=="
+                                        alt=" "></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-sm-4 ">
+                    <div class=" row ">
+                        <div class=" col-1 mx-2 ">
+                            <h3 class=" text-black-50 "><strong>05</strong> </h3>
+                        </div>
+                        <div class=" col-9 ">
+                            <img class=" rounded-circle " src=" https://miro.medium.com/fit/c/24/24/1*Va5FbsAx7Jedvho9djMfLg.jpeg " alt=" ">
+                            <span class=" small mx-1 ">The Devops Guy
+                                in
+                                ITNEXT</span>
+                            <h6 class=" mt-2 "> <strong>How I reversed a NodeJS malware and found the author</strong> </h6>
+                            <ul class=" list-inline small ">
+                                <li class=" list-inline-item text-black-50 ">Jan 30</li>
+                                <li class=" list-inline-item text-black-50 ">·</li>
+                                <li class=" list-inline-item text-black-50 ">20 min read</li>
+                                <li class=" list-inline-item "><img src=" data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJzdGFyLTE1cHhfc3ZnX19zdmdJY29uLXVzZSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiB2aWV3Qm94PSIwIDAgMTUgMTUiIGFyaWEtbGFiZWw9Ik1lbWJlciBvbmx5IGNvbnRlbnQiPjxwYXRoIGQ9Ik03LjQ0IDIuMzJjLjAzLS4xLjA5LS4xLjEyIDBsMS4yIDMuNTNhLjI5LjI5IDAgMCAwIC4yNi4yaDMuODhjLjExIDAgLjEzLjA0LjA0LjFMOS44IDguMzNhLjI3LjI3IDAgMCAwLS4xLjI5bDEuMiAzLjUzYy4wMy4xLS4wMS4xMy0uMS4wN2wtMy4xNC0yLjE4YS4zLjMgMCAwIDAtLjMyIDBMNC4yIDEyLjIyYy0uMS4wNi0uMTQuMDMtLjEtLjA3bDEuMi0zLjUzYS4yNy4yNyAwIDAgMC0uMS0uM0wyLjA2IDYuMTZjLS4xLS4wNi0uMDctLjEyLjAzLS4xMmgzLjg5YS4yOS4yOSAwIDAgMCAuMjYtLjE5bDEuMi0zLjUyeiIvPjwvc3ZnPg=="
+                                        alt=" "></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-sm-4 ">
+                    <div class=" row ">
+                        <div class=" col-1 mx-2 ">
+                            <h3 class=" text-black-50 "><strong>06</strong> </h3>
+                        </div>
+                        <div class=" col-9 ">
+                            <img class=" rounded-circle " src=https://miro.medium.com/fit/c/24/24/1*qmtJktiaI1dhwGMUo8UZ9Q.jpeg " alt=" ">
+                <span class="small mx-1 ">Aniket
+                                in
+                                JavaScript in Plain English</span>
+                <h6 class="mt-2 "> <strong>I Met a Rich Programmer, He Gave Me 3 Life-Changing Pieces of
+                                    Advice</strong> </h6>
+                <ul class="list-inline small ">
+                    <li class="list-inline-item text-black-50 ">Jan 23</li>
+                    <li class="list-inline-item text-black-50">·</li>
+                    <li class="list-inline-item text-black-50 ">31 min read</li>
+                    <li class="list-inline-item "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJzdGFyLTE1cHhfc3ZnX19zdmdJY29uLXVzZSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiB2aWV3Qm94PSIwIDAgMTUgMTUiIGFyaWEtbGFiZWw9Ik1lbWJlciBvbmx5IGNvbnRlbnQiPjxwYXRoIGQ9Ik03LjQ0IDIuMzJjLjAzLS4xLjA5LS4xLjEyIDBsMS4yIDMuNTNhLjI5LjI5IDAgMCAwIC4yNi4yaDMuODhjLjExIDAgLjEzLjA0LjA0LjFMOS44IDguMzNhLjI3LjI3IDAgMCAwLS4xLjI5bDEuMiAzLjUzYy4wMy4xLS4wMS4xMy0uMS4wN2wtMy4xNC0yLjE4YS4zLjMgMCAwIDAtLjMyIDBMNC4yIDEyLjIyYy0uMS4wNi0uMTQuMDMtLjEtLjA3bDEuMi0zLjUzYS4yNy4yNyAwIDAgMC0uMS0uM0wyLjA2IDYuMTZjLS4xLS4wNi0uMDctLjEyLjAzLS4xMmgzLjg5YS4yOS4yOSAwIDAgMCAuMjYtLjE5bDEuMi0zLjUyeiIvPjwvc3ZnPg=="
+                            alt=" "></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!--  SECTION-1 END -->
+    <!--  SECTION-2 START -->
+    <div class="my-5">
+        <div class="container ">
+            <div class="row">
+                <div class="col-8">
+                    <article class="row my-4">
+                        <div class="col-8">
+                            <img class="rounded-circle" src="https://miro.medium.com/fit/c/24/24/1*bJaQVXydvTUKte67XWoeRQ.jpeg" alt="">
+                            <span class=" mx-1">Sienna Mae Gomez</span>
+                            <h5 class="mt-2"> <strong>Sienna Mae Gomez: Reflections from an 18-Year Old Me</strong>
+                            </h5>
+                            <p>Looking back, one of the things I most appreciated about the Obama candidacy and his presidency was his campaign’s full</p>
+                            <ul class="list-inline small">
+                                <li class="list-inline-item text-black-50">Jan 23</li>
+                                <li class="list-inline-item text-black-50">·</li>
+                                <li class="list-inline-item text-black-50">15 min read</li>
+                                <li class="btn- list-inline-item btn btn-outline-secondary text-black-50">Wordle</li>
+
+                                <li class="list-inline-item "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJzdGFyLTE1cHhfc3ZnX19zdmdJY29uLXVzZSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiB2aWV3Qm94PSIwIDAgMTUgMTUiIGFyaWEtbGFiZWw9Ik1lbWJlciBvbmx5IGNvbnRlbnQiPjxwYXRoIGQ9Ik03LjQ0IDIuMzJjLjAzLS4xLjA5LS4xLjEyIDBsMS4yIDMuNTNhLjI5LjI5IDAgMCAwIC4yNi4yaDMuODhjLjExIDAgLjEzLjA0LjA0LjFMOS44IDguMzNhLjI3LjI3IDAgMCAwLS4xLjI5bDEuMiAzLjUzYy4wMy4xLS4wMS4xMy0uMS4wN2wtMy4xNC0yLjE4YS4zLjMgMCAwIDAtLjMyIDBMNC4yIDEyLjIyYy0uMS4wNi0uMTQuMDMtLjEtLjA3bDEuMi0zLjUzYS4yNy4yNyAwIDAgMC0uMS0uM0wyLjA2IDYuMTZjLS4xLS4wNi0uMDctLjEyLjAzLS4xMmgzLjg5YS4yOS4yOSAwIDAgMCAuMjYtLjE5bDEuMi0zLjUyeiIvPjwvc3ZnPg=="
+                                        alt=""></li>
+                                <li class="list-inline-item mx-2 float-end "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJlaCBlbCBsZiIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1Ij48cGF0aCBkPSJNNSAxMi41YzAgLjU1LjIgMS4wMi41OSAxLjQxLjM5LjQuODYuNTkgMS40MS41OS41NSAwIDEuMDItLjIgMS40MS0uNTkuNC0uMzkuNTktLjg2LjU5LTEuNDEgMC0uNTUtLjItMS4wMi0uNTktMS40MUExLjkzIDEuOTMgMCAwIDAgNyAxMC41Yy0uNTUgMC0xLjAyLjItMS40MS41OS0uNC4zOS0uNTkuODYtLjU5IDEuNDF6bTUuNjIgMGMwIC41NS4yIDEuMDIuNTggMS40MS40LjQuODcuNTkgMS40Mi41OS41NSAwIDEuMDItLjIgMS40MS0uNTkuNC0uMzkuNTktLjg2LjU5LTEuNDEgMC0uNTUtLjItMS4wMi0uNTktMS40MWExLjkzIDEuOTMgMCAwIDAtMS40MS0uNTljLS41NSAwLTEuMDMuMi0xLjQyLjU5LS4zOS4zOS0uNTguODYtLjU4IDEuNDF6bTUuNiAwYzAgLjU1LjIgMS4wMi41OCAxLjQxLjQuNC44Ny41OSAxLjQzLjU5LjU2IDAgMS4wMy0uMiAxLjQyLS41OS4zOS0uMzkuNTgtLjg2LjU4LTEuNDEgMC0uNTUtLjItMS4wMi0uNTgtMS40MWExLjkzIDEuOTMgMCAwIDAtMS40Mi0uNTljLS41NiAwLTEuMDQuMi0xLjQzLjU5LS4zOS4zOS0uNTguODYtLjU4IDEuNDF6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="
+                                        alt=""></li>
+                                <li class="list-inline-item float-end "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSIgdmlld0JveD0iMCAwIDI1IDI1IiBmaWxsPSJub25lIiBjbGFzcz0ibGwiPjxwYXRoIGQ9Ik0xOCAyLjVhLjUuNSAwIDAgMSAxIDBWNWgyLjVhLjUuNSAwIDAgMSAwIDFIMTl2Mi41YS41LjUgMCAxIDEtMSAwVjZoLTIuNWEuNS41IDAgMCAxIDAtMUgxOFYyLjV6TTcgN2ExIDEgMCAwIDEgMS0xaDMuNWEuNS41IDAgMCAwIDAtMUg4YTIgMiAwIDAgMC0yIDJ2MTRhLjUuNSAwIDAgMCAuOC40bDUuNy00LjQgNS43IDQuNGEuNS41IDAgMCAwIC44LS40di04LjVhLjUuNSAwIDAgMC0xIDB2Ny40OGwtNS4yLTRhLjUuNSAwIDAgMC0uNiAwbC01LjIgNFY3eiIgZmlsbD0iIzI5MjkyOSIvPjwvc3ZnPg=="
+                                        alt=""></li>
+
+                            </ul>
+
+                        </div>
+                        <div class="col-4">
+                            <img class="" src="https://miro.medium.com/fit/c/200/150/1*BaZa0YQ9C0SGNYuxOufA0w.jpeg" alt="" srcset="">
+                        </div>
+                    </article>
+                    <article class="row my-4">
+                        <div class="col-8">
+                            <img class="rounded-circle" src="https://miro.medium.com/fit/c/24/24/1*qmtJktiaI1dhwGMUo8UZ9Q.jpeg" alt="">
+                            <span class=" mx-1">Sam Wren-Lewis in Forge</span>
+                            <h5 class="mt-2"> <strong>Happiness Comes From Learning, Not Achievement</strong>
+                            </h5>
+                            <p>Happiness Comes From Learning, Not Achievement</p>
+                            <ul class="list-inline small">
+                                <li class="list-inline-item text-black-50">Jan 8</li>
+                                <li class="list-inline-item text-black-50">·</li>
+                                <li class="list-inline-item text-black-50">2 min read</li>
+                                <li class="btn- list-inline-item btn btn-outline-secondary text-black-50">War</li>
+
+                                <li class="list-inline-item "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJzdGFyLTE1cHhfc3ZnX19zdmdJY29uLXVzZSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiB2aWV3Qm94PSIwIDAgMTUgMTUiIGFyaWEtbGFiZWw9Ik1lbWJlciBvbmx5IGNvbnRlbnQiPjxwYXRoIGQ9Ik03LjQ0IDIuMzJjLjAzLS4xLjA5LS4xLjEyIDBsMS4yIDMuNTNhLjI5LjI5IDAgMCAwIC4yNi4yaDMuODhjLjExIDAgLjEzLjA0LjA0LjFMOS44IDguMzNhLjI3LjI3IDAgMCAwLS4xLjI5bDEuMiAzLjUzYy4wMy4xLS4wMS4xMy0uMS4wN2wtMy4xNC0yLjE4YS4zLjMgMCAwIDAtLjMyIDBMNC4yIDEyLjIyYy0uMS4wNi0uMTQuMDMtLjEtLjA3bDEuMi0zLjUzYS4yNy4yNyAwIDAgMC0uMS0uM0wyLjA2IDYuMTZjLS4xLS4wNi0uMDctLjEyLjAzLS4xMmgzLjg5YS4yOS4yOSAwIDAgMCAuMjYtLjE5bDEuMi0zLjUyeiIvPjwvc3ZnPg=="
+                                        alt=""></li>
+                                <li class="list-inline-item mx-2 float-end "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJlaCBlbCBsZiIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1Ij48cGF0aCBkPSJNNSAxMi41YzAgLjU1LjIgMS4wMi41OSAxLjQxLjM5LjQuODYuNTkgMS40MS41OS41NSAwIDEuMDItLjIgMS40MS0uNTkuNC0uMzkuNTktLjg2LjU5LTEuNDEgMC0uNTUtLjItMS4wMi0uNTktMS40MUExLjkzIDEuOTMgMCAwIDAgNyAxMC41Yy0uNTUgMC0xLjAyLjItMS40MS41OS0uNC4zOS0uNTkuODYtLjU5IDEuNDF6bTUuNjIgMGMwIC41NS4yIDEuMDIuNTggMS40MS40LjQuODcuNTkgMS40Mi41OS41NSAwIDEuMDItLjIgMS40MS0uNTkuNC0uMzkuNTktLjg2LjU5LTEuNDEgMC0uNTUtLjItMS4wMi0uNTktMS40MWExLjkzIDEuOTMgMCAwIDAtMS40MS0uNTljLS41NSAwLTEuMDMuMi0xLjQyLjU5LS4zOS4zOS0uNTguODYtLjU4IDEuNDF6bTUuNiAwYzAgLjU1LjIgMS4wMi41OCAxLjQxLjQuNC44Ny41OSAxLjQzLjU5LjU2IDAgMS4wMy0uMiAxLjQyLS41OS4zOS0uMzkuNTgtLjg2LjU4LTEuNDEgMC0uNTUtLjItMS4wMi0uNTgtMS40MWExLjkzIDEuOTMgMCAwIDAtMS40Mi0uNTljLS41NiAwLTEuMDQuMi0xLjQzLjU5LS4zOS4zOS0uNTguODYtLjU4IDEuNDF6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="
+                                        alt=""></li>
+                                <li class="list-inline-item float-end "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSIgdmlld0JveD0iMCAwIDI1IDI1IiBmaWxsPSJub25lIiBjbGFzcz0ibGwiPjxwYXRoIGQ9Ik0xOCAyLjVhLjUuNSAwIDAgMSAxIDBWNWgyLjVhLjUuNSAwIDAgMSAwIDFIMTl2Mi41YS41LjUgMCAxIDEtMSAwVjZoLTIuNWEuNS41IDAgMCAxIDAtMUgxOFYyLjV6TTcgN2ExIDEgMCAwIDEgMS0xaDMuNWEuNS41IDAgMCAwIDAtMUg4YTIgMiAwIDAgMC0yIDJ2MTRhLjUuNSAwIDAgMCAuOC40bDUuNy00LjQgNS43IDQuNGEuNS41IDAgMCAwIC44LS40di04LjVhLjUuNSAwIDAgMC0xIDB2Ny40OGwtNS4yLTRhLjUuNSAwIDAgMC0uNiAwbC01LjIgNFY3eiIgZmlsbD0iIzI5MjkyOSIvPjwvc3ZnPg=="
+                                        alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <img class="" src="https://miro.medium.com/fit/c/200/150/0*UDPkBsEVbEHtK4Xf" alt="" srcset="">
+                        </div>
+                    </article>
+                    <article class="row my-4">
+                        <div class="col-8">
+                            <img class="rounded-circle" src="https://miro.medium.com/fit/c/24/24/1*uWbn_ZpGom5xlrE-bX-EuQ.jpeg" alt="">
+                            <span class=" mx-1">Sarah Kwong
+                                in
+                                Human Parts</span>
+                            <h5 class="mt-2"> <strong>Lunar New Year</strong>
+                            </h5>
+                            <p>Saying an excited hello and an early goodbye</p>
+                            <ul class="list-inline small">
+                                <li class="list-inline-item text-black-50">Feb 21</li>
+                                <li class="list-inline-item text-black-50">·</li>
+                                <li class="list-inline-item text-black-50">6 min read</li>
+                                <li class="btn- list-inline-item btn btn-outline-secondary text-black-50">Cookie</li>
+
+                                <li class="list-inline-item "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJzdGFyLTE1cHhfc3ZnX19zdmdJY29uLXVzZSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiB2aWV3Qm94PSIwIDAgMTUgMTUiIGFyaWEtbGFiZWw9Ik1lbWJlciBvbmx5IGNvbnRlbnQiPjxwYXRoIGQ9Ik03LjQ0IDIuMzJjLjAzLS4xLjA5LS4xLjEyIDBsMS4yIDMuNTNhLjI5LjI5IDAgMCAwIC4yNi4yaDMuODhjLjExIDAgLjEzLjA0LjA0LjFMOS44IDguMzNhLjI3LjI3IDAgMCAwLS4xLjI5bDEuMiAzLjUzYy4wMy4xLS4wMS4xMy0uMS4wN2wtMy4xNC0yLjE4YS4zLjMgMCAwIDAtLjMyIDBMNC4yIDEyLjIyYy0uMS4wNi0uMTQuMDMtLjEtLjA3bDEuMi0zLjUzYS4yNy4yNyAwIDAgMC0uMS0uM0wyLjA2IDYuMTZjLS4xLS4wNi0uMDctLjEyLjAzLS4xMmgzLjg5YS4yOS4yOSAwIDAgMCAuMjYtLjE5bDEuMi0zLjUyeiIvPjwvc3ZnPg=="
+                                        alt=""></li>
+                                <li class="list-inline-item mx-2 float-end "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJlaCBlbCBsZiIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1Ij48cGF0aCBkPSJNNSAxMi41YzAgLjU1LjIgMS4wMi41OSAxLjQxLjM5LjQuODYuNTkgMS40MS41OS41NSAwIDEuMDItLjIgMS40MS0uNTkuNC0uMzkuNTktLjg2LjU5LTEuNDEgMC0uNTUtLjItMS4wMi0uNTktMS40MUExLjkzIDEuOTMgMCAwIDAgNyAxMC41Yy0uNTUgMC0xLjAyLjItMS40MS41OS0uNC4zOS0uNTkuODYtLjU5IDEuNDF6bTUuNjIgMGMwIC41NS4yIDEuMDIuNTggMS40MS40LjQuODcuNTkgMS40Mi41OS41NSAwIDEuMDItLjIgMS40MS0uNTkuNC0uMzkuNTktLjg2LjU5LTEuNDEgMC0uNTUtLjItMS4wMi0uNTktMS40MWExLjkzIDEuOTMgMCAwIDAtMS40MS0uNTljLS41NSAwLTEuMDMuMi0xLjQyLjU5LS4zOS4zOS0uNTguODYtLjU4IDEuNDF6bTUuNiAwYzAgLjU1LjIgMS4wMi41OCAxLjQxLjQuNC44Ny41OSAxLjQzLjU5LjU2IDAgMS4wMy0uMiAxLjQyLS41OS4zOS0uMzkuNTgtLjg2LjU4LTEuNDEgMC0uNTUtLjItMS4wMi0uNTgtMS40MWExLjkzIDEuOTMgMCAwIDAtMS40Mi0uNTljLS41NiAwLTEuMDQuMi0xLjQzLjU5LS4zOS4zOS0uNTguODYtLjU4IDEuNDF6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="
+                                        alt=""></li>
+                                <li class="list-inline-item float-end "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSIgdmlld0JveD0iMCAwIDI1IDI1IiBmaWxsPSJub25lIiBjbGFzcz0ibGwiPjxwYXRoIGQ9Ik0xOCAyLjVhLjUuNSAwIDAgMSAxIDBWNWgyLjVhLjUuNSAwIDAgMSAwIDFIMTl2Mi41YS41LjUgMCAxIDEtMSAwVjZoLTIuNWEuNS41IDAgMCAxIDAtMUgxOFYyLjV6TTcgN2ExIDEgMCAwIDEgMS0xaDMuNWEuNS41IDAgMCAwIDAtMUg4YTIgMiAwIDAgMC0yIDJ2MTRhLjUuNSAwIDAgMCAuOC40bDUuNy00LjQgNS43IDQuNGEuNS41IDAgMCAwIC44LS40di04LjVhLjUuNSAwIDAgMC0xIDB2Ny40OGwtNS4yLTRhLjUuNSAwIDAgMC0uNiAwbC01LjIgNFY3eiIgZmlsbD0iIzI5MjkyOSIvPjwvc3ZnPg=="
+                                        alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <img class="" src="https://miro.medium.com/fit/c/200/150/0*i5UtUFR5gDYnXLDK" alt="" srcset="">
+                        </div>
+                    </article>
+                    <article class="row my-4">
+                        <div class="col-8">
+                            <img class="rounded-circle" src="https://miro.medium.com/fit/c/24/24/1*AQbRi7322aPUWTzp_zOhTg.png" alt="">
+                            <span class=" mx-1">Julio Vincent Gambuto
+                                in
+                                GEN</span>
+                            <h5 class="mt-2"> <strong>Branding Biden</strong>
+                            </h5>
+                            <p>Who can do it faster and better, the left or the right?</p>
+                            <ul class="list-inline small">
+                                <li class="list-inline-item text-black-50">Jan 25</li>
+                                <li class="list-inline-item text-black-50">·</li>
+                                <li class="list-inline-item text-black-50">42 min read</li>
+                                <li class="btn- list-inline-item btn btn-outline-secondary text-black-50">Wordle</li>
+
+                                <li class="list-inline-item "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJzdGFyLTE1cHhfc3ZnX19zdmdJY29uLXVzZSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiB2aWV3Qm94PSIwIDAgMTUgMTUiIGFyaWEtbGFiZWw9Ik1lbWJlciBvbmx5IGNvbnRlbnQiPjxwYXRoIGQ9Ik03LjQ0IDIuMzJjLjAzLS4xLjA5LS4xLjEyIDBsMS4yIDMuNTNhLjI5LjI5IDAgMCAwIC4yNi4yaDMuODhjLjExIDAgLjEzLjA0LjA0LjFMOS44IDguMzNhLjI3LjI3IDAgMCAwLS4xLjI5bDEuMiAzLjUzYy4wMy4xLS4wMS4xMy0uMS4wN2wtMy4xNC0yLjE4YS4zLjMgMCAwIDAtLjMyIDBMNC4yIDEyLjIyYy0uMS4wNi0uMTQuMDMtLjEtLjA3bDEuMi0zLjUzYS4yNy4yNyAwIDAgMC0uMS0uM0wyLjA2IDYuMTZjLS4xLS4wNi0uMDctLjEyLjAzLS4xMmgzLjg5YS4yOS4yOSAwIDAgMCAuMjYtLjE5bDEuMi0zLjUyeiIvPjwvc3ZnPg=="
+                                        alt=""></li>
+                                <li class="list-inline-item mx-2 float-end "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJlaCBlbCBsZiIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1Ij48cGF0aCBkPSJNNSAxMi41YzAgLjU1LjIgMS4wMi41OSAxLjQxLjM5LjQuODYuNTkgMS40MS41OS41NSAwIDEuMDItLjIgMS40MS0uNTkuNC0uMzkuNTktLjg2LjU5LTEuNDEgMC0uNTUtLjItMS4wMi0uNTktMS40MUExLjkzIDEuOTMgMCAwIDAgNyAxMC41Yy0uNTUgMC0xLjAyLjItMS40MS41OS0uNC4zOS0uNTkuODYtLjU5IDEuNDF6bTUuNjIgMGMwIC41NS4yIDEuMDIuNTggMS40MS40LjQuODcuNTkgMS40Mi41OS41NSAwIDEuMDItLjIgMS40MS0uNTkuNC0uMzkuNTktLjg2LjU5LTEuNDEgMC0uNTUtLjItMS4wMi0uNTktMS40MWExLjkzIDEuOTMgMCAwIDAtMS40MS0uNTljLS41NSAwLTEuMDMuMi0xLjQyLjU5LS4zOS4zOS0uNTguODYtLjU4IDEuNDF6bTUuNiAwYzAgLjU1LjIgMS4wMi41OCAxLjQxLjQuNC44Ny41OSAxLjQzLjU5LjU2IDAgMS4wMy0uMiAxLjQyLS41OS4zOS0uMzkuNTgtLjg2LjU4LTEuNDEgMC0uNTUtLjItMS4wMi0uNTgtMS40MWExLjkzIDEuOTMgMCAwIDAtMS40Mi0uNTljLS41NiAwLTEuMDQuMi0xLjQzLjU5LS4zOS4zOS0uNTguODYtLjU4IDEuNDF6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="
+                                        alt=""></li>
+                                <li class="list-inline-item float-end "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSIgdmlld0JveD0iMCAwIDI1IDI1IiBmaWxsPSJub25lIiBjbGFzcz0ibGwiPjxwYXRoIGQ9Ik0xOCAyLjVhLjUuNSAwIDAgMSAxIDBWNWgyLjVhLjUuNSAwIDAgMSAwIDFIMTl2Mi41YS41LjUgMCAxIDEtMSAwVjZoLTIuNWEuNS41IDAgMCAxIDAtMUgxOFYyLjV6TTcgN2ExIDEgMCAwIDEgMS0xaDMuNWEuNS41IDAgMCAwIDAtMUg4YTIgMiAwIDAgMC0yIDJ2MTRhLjUuNSAwIDAgMCAuOC40bDUuNy00LjQgNS43IDQuNGEuNS41IDAgMCAwIC44LS40di04LjVhLjUuNSAwIDAgMC0xIDB2Ny40OGwtNS4yLTRhLjUuNSAwIDAgMC0uNiAwbC01LjIgNFY3eiIgZmlsbD0iIzI5MjkyOSIvPjwvc3ZnPg=="
+                                        alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <img class="" src="https://miro.medium.com/fit/c/200/150/1*lX8inohoDL7-4jmpUoYaLw.jpeg" alt="" srcset="">
+                        </div>
+                    </article>
+                    <article class="row my-4">
+                        <div class="col-8">
+                            <img class="rounded-circle" src="https://miro.medium.com/fit/c/25/25/1*GhG8ZeoE0TGfCHwL9SCrfw.png" alt="">
+                            <span class=" mx-1">Robert Roy Britt
+                                in
+                                Elemental</span>
+                            <h5 class="mt-2"> <strong>Anti-Aging Secret Revealed: Embrace Getting Older</strong>
+                            </h5>
+                            <p>A pro-aging mindset will help you enjoy rather than fear the inevitable</p>
+                            <ul class="list-inline small">
+                                <li class="list-inline-item text-black-50">Feb 1</li>
+                                <li class="list-inline-item text-black-50">·</li>
+                                <li class="list-inline-item text-black-50">12 min read</li>
+                                <li class="list-inline-item btn btn-outline-secondary rounded-pill text-black-50">Politics</li>
+
+                                <li class="list-inline-item "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJzdGFyLTE1cHhfc3ZnX19zdmdJY29uLXVzZSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiB2aWV3Qm94PSIwIDAgMTUgMTUiIGFyaWEtbGFiZWw9Ik1lbWJlciBvbmx5IGNvbnRlbnQiPjxwYXRoIGQ9Ik03LjQ0IDIuMzJjLjAzLS4xLjA5LS4xLjEyIDBsMS4yIDMuNTNhLjI5LjI5IDAgMCAwIC4yNi4yaDMuODhjLjExIDAgLjEzLjA0LjA0LjFMOS44IDguMzNhLjI3LjI3IDAgMCAwLS4xLjI5bDEuMiAzLjUzYy4wMy4xLS4wMS4xMy0uMS4wN2wtMy4xNC0yLjE4YS4zLjMgMCAwIDAtLjMyIDBMNC4yIDEyLjIyYy0uMS4wNi0uMTQuMDMtLjEtLjA3bDEuMi0zLjUzYS4yNy4yNyAwIDAgMC0uMS0uM0wyLjA2IDYuMTZjLS4xLS4wNi0uMDctLjEyLjAzLS4xMmgzLjg5YS4yOS4yOSAwIDAgMCAuMjYtLjE5bDEuMi0zLjUyeiIvPjwvc3ZnPg=="
+                                        alt=""></li>
+                                <li class="list-inline-item mx-2 float-end "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJlaCBlbCBsZiIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1Ij48cGF0aCBkPSJNNSAxMi41YzAgLjU1LjIgMS4wMi41OSAxLjQxLjM5LjQuODYuNTkgMS40MS41OS41NSAwIDEuMDItLjIgMS40MS0uNTkuNC0uMzkuNTktLjg2LjU5LTEuNDEgMC0uNTUtLjItMS4wMi0uNTktMS40MUExLjkzIDEuOTMgMCAwIDAgNyAxMC41Yy0uNTUgMC0xLjAyLjItMS40MS41OS0uNC4zOS0uNTkuODYtLjU5IDEuNDF6bTUuNjIgMGMwIC41NS4yIDEuMDIuNTggMS40MS40LjQuODcuNTkgMS40Mi41OS41NSAwIDEuMDItLjIgMS40MS0uNTkuNC0uMzkuNTktLjg2LjU5LTEuNDEgMC0uNTUtLjItMS4wMi0uNTktMS40MWExLjkzIDEuOTMgMCAwIDAtMS40MS0uNTljLS41NSAwLTEuMDMuMi0xLjQyLjU5LS4zOS4zOS0uNTguODYtLjU4IDEuNDF6bTUuNiAwYzAgLjU1LjIgMS4wMi41OCAxLjQxLjQuNC44Ny41OSAxLjQzLjU5LjU2IDAgMS4wMy0uMiAxLjQyLS41OS4zOS0uMzkuNTgtLjg2LjU4LTEuNDEgMC0uNTUtLjItMS4wMi0uNTgtMS40MWExLjkzIDEuOTMgMCAwIDAtMS40Mi0uNTljLS41NiAwLTEuMDQuMi0xLjQzLjU5LS4zOS4zOS0uNTguODYtLjU4IDEuNDF6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="
+                                        alt=""></li>
+                                <li class="list-inline-item float-end "><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSIgdmlld0JveD0iMCAwIDI1IDI1IiBmaWxsPSJub25lIiBjbGFzcz0ibGwiPjxwYXRoIGQ9Ik0xOCAyLjVhLjUuNSAwIDAgMSAxIDBWNWgyLjVhLjUuNSAwIDAgMSAwIDFIMTl2Mi41YS41LjUgMCAxIDEtMSAwVjZoLTIuNWEuNS41IDAgMCAxIDAtMUgxOFYyLjV6TTcgN2ExIDEgMCAwIDEgMS0xaDMuNWEuNS41IDAgMCAwIDAtMUg4YTIgMiAwIDAgMC0yIDJ2MTRhLjUuNSAwIDAgMCAuOC40bDUuNy00LjQgNS43IDQuNGEuNS41IDAgMCAwIC44LS40di04LjVhLjUuNSAwIDAgMC0xIDB2Ny40OGwtNS4yLTRhLjUuNSAwIDAgMC0uNiAwbC01LjIgNFY3eiIgZmlsbD0iIzI5MjkyOSIvPjwvc3ZnPg=="
+                                        alt=""></li>
+
+                            </ul>
+
+                        </div>
+                        <div class="col-4">
+                            <img class="" src="https://miro.medium.com/fit/c/200/150/0*pnUcmPuRsmQ4w4wv.jpg" alt="" srcset="">
+                        </div>
+                    </article>
+                    <!--  SECTION-2 END -->
+
+                </div>
+                <!--  ASIDE START -->
+                <div class="tags col-4">
+
+                    <h6 class="small">
+                        DISCOVER MORE OF WHAT MATTERS TO YOU
+                    </h6>
+                    <div class="small ">
+                        <button type="button" class="btn btn-outline-secondary mx-1 my-1 border">Self</button>
+                        <button type="button" class="btn btn-outline-secondary mx-1 my-1 border">Relationship</button>
+                        <button type="button" class="btn btn-outline-secondary mx-1 my-1 border">Data Science</button>
+                        <button type="button" class="btn btn-outline-secondary mx-1 my-1 border">Programming</button>
+                        <button type="button" class="btn btn-outline-secondary mx-1 my-1 border">Productivity</button>
+                        <button type="button" class="btn btn-outline-secondary mx-1 my-1 border">JavaScript</button>
+                        <button type="button" class="btn btn-outline-secondary mx-1 my-1 border">Machine
+                            Learning</button>
+                        <button type="button" class="btn btn-outline-secondary mx-1 my-1 border">Politics</button>
+                        <button type="button" class="btn btn-outline-secondary mx-1 my-1 border">Health</button>
+                    </div>
+                    <hr>
+                    <span class="about text-black-50 d-flex">
+                        <h6 class="mx-2 my-2">Help</h6>
+                        <h6 class="mx-3 my-2">Status</h6>
+                        <h6 class="mx-2 my-2">Writes</h6>
+                        <h6 class="mx-2 my-2">Blog</h6>
+                        <h6 class="mx-2 my-2">Careers</h6>
+                        <h6 class="mx-2 my-2">Privacy</h6>
+                    </span>
+                    <span class="text-black-50 d-flex">
+                        <h6 class=" mx-2 my-2 ">Terms</h6>
+                        <h6 class=" mx-2 my-2 ">About</h6>
+                        <h6 class=" mx-2 my-2 ">Knowable</h6>
+                    </span>
+                    <!--  ASIDE END -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
